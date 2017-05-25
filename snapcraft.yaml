@@ -1,0 +1,16 @@
+name: hummingboard
+version: 16-0.1
+summary: SolidRun Humminmgboard IMX6
+description: |
+ Bootloader files and partitoning data to create a
+ bootable Ubuntu Core image for the IMX6 SolidRun
+ Hummingboard.
+type: gadget
+architectures:
+  - armhf
+confinement: strict
+
+parts:
+  hummingboard:
+    plugin: dump
+    source: prebuilt
