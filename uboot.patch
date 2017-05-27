@@ -1,14 +1,14 @@
 diff --git a/include/configs/mx6cuboxi.h b/include/configs/mx6cuboxi.h
-index 446b3bc..8d87400 100644
+index bc22f56..8c24179 100644
 --- a/include/configs/mx6cuboxi.h
 +++ b/include/configs/mx6cuboxi.h
-@@ -143,8 +143,15 @@
-        (CONFIG_SYS_INIT_RAM_ADDR + CONFIG_SYS_INIT_SP_OFFSET)
+@@ -138,8 +138,15 @@
+ 	(CONFIG_SYS_INIT_RAM_ADDR + CONFIG_SYS_INIT_SP_OFFSET)
  
  /* Environment organization */
--#define CONFIG_ENV_SIZE                        (8 * 1024)
+-#define CONFIG_ENV_SIZE			(8 * 1024)
 -#define CONFIG_ENV_IS_IN_MMC
--#define CONFIG_ENV_OFFSET              (8 * 64 * 1024)
+-#define CONFIG_ENV_OFFSET		(8 * 64 * 1024)
 +#undef  CONFIG_ENV_IS_NOWHERE
 +#undef  CONFIG_ENV_IS_IN_NAND
 +#undef  CONFIG_ENV_IS_IN_MMC
@@ -21,4 +21,3 @@ index 446b3bc..8d87400 100644
 +#define CONFIG_SYS_REDUNDAND_ENVIRONMENT // After discussion on IRC we use 5 byte headers to make life easier.
  
  #endif                         /* __MX6CUBOXI_CONFIG_H */
-

@@ -9,8 +9,21 @@ type: gadget
 architectures:
   - armhf
 confinement: strict
+grade: stable
 
 parts:
-  hummingboard:
-    plugin: dump
-    source: prebuilt
+  uboot:
+    plugin: make
+    source: git://git.denx.de/u-boot.git
+    source-branch: v2017.01
+    artifacts: [SPL, u-boot.img]
+    prepare: |
+      git apply ../../../uboot.patch
+      make mx6cuboxi_defconfig
+    install: |
+      tools/mkenvimage -r -s 131072 -o $SNAPCRAFT_PART_INSTALL/uboot.env ../../../uboot.env.in
+      cd $SNAPCRAFT_PART_INSTALL/; ln -s uboot.env uboot.conf
+    build-packages:
+      - libpython2.7-dev
+      - build-essential
+      - bc
