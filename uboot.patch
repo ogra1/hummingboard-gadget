@@ -2,7 +2,7 @@ diff --git a/include/configs/mx6cuboxi.h b/include/configs/mx6cuboxi.h
 index bc22f56..8c24179 100644
 --- a/include/configs/mx6cuboxi.h
 +++ b/include/configs/mx6cuboxi.h
-@@ -138,8 +138,15 @@
+@@ -138,8 +138,16 @@
  	(CONFIG_SYS_INIT_RAM_ADDR + CONFIG_SYS_INIT_SP_OFFSET)
  
  /* Environment organization */
@@ -19,5 +19,6 @@ index bc22f56..8c24179 100644
 +#define FAT_ENV_INTERFACE               "mmc"
 +#define FAT_ENV_FILE                    "uboot.env"
 +#define CONFIG_SYS_REDUNDAND_ENVIRONMENT
++#define CONFIG_CMD_SETEXPR
  
  #endif                         /* __MX6CUBOXI_CONFIG_H */
