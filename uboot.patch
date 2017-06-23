@@ -1,8 +1,16 @@
 diff --git a/include/configs/mx6cuboxi.h b/include/configs/mx6cuboxi.h
-index bc22f56..8c24179 100644
+index 446b3bc..6da20b0 100644
 --- a/include/configs/mx6cuboxi.h
 +++ b/include/configs/mx6cuboxi.h
-@@ -138,8 +138,15 @@
+@@ -43,6 +43,7 @@
+ #define CONFIG_VIDEO_BMP_LOGO
+ #define CONFIG_IMX_HDMI
+ #define CONFIG_CMD_HDMIDETECT
++#define CONFIG_CMD_BMP
+ #define CONFIG_IMX_VIDEO_SKIP
+ 
+ /* USB */
+@@ -143,8 +144,15 @@
  	(CONFIG_SYS_INIT_RAM_ADDR + CONFIG_SYS_INIT_SP_OFFSET)
  
  /* Environment organization */
