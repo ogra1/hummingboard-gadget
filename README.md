@@ -29,7 +29,7 @@ snapcraft
 ```
 ## Splash screen
 
-The splashscreen has been cerated from a jpeg with the following line:
+The splashscreen has been created from a jpeg with the following line:
 
 ```
 jpegtopnm splash.jpg | ppmquant 256 | ppmtobmp -bpp 8 >splash.bmp
