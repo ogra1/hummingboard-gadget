@@ -27,3 +27,8 @@ parts:
       - libpython2.7-dev
       - build-essential
       - bc
+  splash:
+    source: .
+    plugin: dump
+    prime:
+        - splash.bmp
