@@ -27,3 +27,12 @@ Copy the crossbuild-snapcraft.yaml over snapcraft.yaml and run `snapcraft`
 cp crossbuild-snapcraft.yaml snapcraft.yaml
 snapcraft
 ```
+## Splash screen
+
+The splashscreen has been cerated from a jpeg with the following line:
+
+```
+jpegtopnm splash.jpg | ppmquant 256 | ppmtobmp -bpp 8 >splash.bmp
+```
+
+See https://www.denx.de/wiki/DULG/UBootBitmapSupport for more info.
