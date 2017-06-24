@@ -22,3 +22,6 @@ volumes:
         filesystem: vfat
         filesystem-label: system-boot
         size: 128M
+        content:
+          - source: splash.bmp
+            target: .
