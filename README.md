@@ -1,5 +1,7 @@
 # SolidRun Hummingboard Gadget Snap
 
+[![Snap Status](https://build.snapcraft.io/badge/ogra1/hummingboard-gadget.svg)](https://build.snapcraft.io/user/ogra1/hummingboard-gadget)
+
 This repository contains the source for an Ubuntu Core gadget snap
 for the SolidRun Hummingboard. Building it with snapcraft will
 automatically pull, configure, patch and build the git.denx.de/u-boot.git
